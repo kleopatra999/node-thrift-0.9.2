@@ -1,6 +1,14 @@
 Thrift Node.js Library
 =========================
 
+NOTE: This is a copy (not a fork) of the current (as of October 20 2014) state of https://github.com/apache/thrift node.js library.
+
+It's only purpose is because I need the 0.9.2 code in an app but Apache Thrift have not released it after 3 months as a release candidate. It fixes a major issue where TCP connections throw unhandleable errors if they ever disconnect unexpectedly (which is comon occurence in real life). Npm also has no way to refer to a module that is not at the root of the repo by commitish so I needed top copy just the node part into a new repo just to get it to install with NPM.
+
+This does NOT add any changes and may NOT keep in-sync with upstream. If you really need Thrift server for node.js and 0.9.2 still isn't out you might use this temporarily but no warranty etc...
+
+## Original README:
+
 License
 -------
 Licensed to the Apache Software Foundation (ASF) under one
